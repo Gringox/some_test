@@ -1,0 +1,8 @@
+<h1>Session#create</h1>
+<p><%= @message %></p>
+
+<% if @message.eql? 'Login OK' %>
+  <%= button_to 'Logout', '/session', method: 'delete' %>
+<% else %>
+  <%= button_to 'Back to login', '/login', method: 'get' %>
+<% end %>

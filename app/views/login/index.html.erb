@@ -1,0 +1,9 @@
+<%= form_tag "/session", method: "post" do %>
+  Username: <%= text_field_tag :username, params[:username] %> <br>
+  Password: <%= password_field_tag :password, params[:password] %> <br>
+  <%= submit_tag "Login" %>
+<% end %>
+
+<br>
+
+<%= button_to "Sign Up", "/user", method: "get" %>

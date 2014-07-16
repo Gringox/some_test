@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lab2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <% if flash[:notice] %>
+    <p><%= flash[:notice] %></p>
+  <% end -%>
+
+  <h2><%= Time.now %></h2>
+
+  <h2>El controlador "dime" dice:</h2>
+
+  <p><%= t :hello_world %></p>
+
+  <%= yield %>
+
+</body>
+</html>

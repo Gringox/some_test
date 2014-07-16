@@ -1,0 +1,11 @@
+== README
+
+* Ruby version: 2.1.2
+
+* Rails version: 4.1.4
+
+* Database: sqlite3
+
+* Database schema dump: db/schema_dump.sql
+
+* Just run: <tt>bundle install</tt>.

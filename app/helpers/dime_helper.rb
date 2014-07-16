@@ -1,0 +1,2 @@
+module DimeHelper
+end

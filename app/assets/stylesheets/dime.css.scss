@@ -1,0 +1,56 @@
+// Place all the styles related to the dime controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*h2 {
+        color: blue;
+}
+
+.yield_class{
+        color: red;
+}*/
+
+
+.minion{
+	background-image: url('/images/batman_minion.jpg');
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 1000px;
+	position: relative;
+}
+
+.minion_eye{
+	background-image: url('/images/minion_eye.jpg');
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 300px;
+
+	/* Animation goes here */
+	animation: example 3s; 
+	animation-iteration-count: infinite; 
+	-webkit-animation: example 3s; /* Safari & Chrome */
+	-webkit-animation-iteration-count: infinite;
+	/* End Animation */
+
+}
+ 
+@keyframes example { 
+	0%  {transform: translate(0px,0px);}
+	20%  {transform: translate(-40px,-40px);}
+	40%  {transform: translate(40px, -40px);}
+	60%  {transform: translate(40px, 40px);}
+	80%  {transform: translate(-40px,40px); } 
+	100%  {transform: translate(0px,0px);}
+}
+ 
+@-webkit-keyframes example { /*Safari & Chrome */
+	0%  {-webkit-transform: translate(0px,0px);}
+	20%  {-webkit-transform: translate(-40px,-40px);}
+	40%  {-webkit-transform: translate(40px, -40px);}
+	60%  {-webkit-transform: translate(40px, 40px);}
+	80%  {-webkit-transform: translate(-40px,40px); } 
+	100%  {-webkit-transform: translate(0px,0px);}
+}
